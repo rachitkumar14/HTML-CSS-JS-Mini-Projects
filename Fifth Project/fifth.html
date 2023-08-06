@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* CSS */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body part */
+        body{
+            height: 100vh;
+            background-color: rgb(225, 237, 241);
+            width: 100vw;
+        }
+        /* Body part */
+        .main{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        /* Main table */
+        .data{
+            gap: 50px;
+            background-color: black;
+            border: solid 2px black;
+            padding: 55px;
+            color: white;
+            border-radius: 32px;
+            width: 370px;
+            height: 70vh;
+        }
+        /* input data */
+        input{
+            text-align: center;
+            font-size: 18px;
+            height: 7vh;
+            border-radius: 32px;
+            background-color: black;
+            color: white;
+            border: none;
+            outline: none;
+        }
+        #username{
+            border: skyblue solid 3px;
+        }
+        #password{
+            border: skyblue solid 3px;
+        }
+        /* Login button */
+        #login{
+            width:150px;
+            cursor: pointer;
+            border: green solid 3px;
+        }
+        /* Hovering part */
+      
+        #login:hover{
+            background-color: green;
+            color: white;
+            transition: all .2s linear;
+        }
+        /* Color change of userName and password */
+        #username:focus , #password:focus{
+            width: 16rem;;
+              animation-name: colorChange;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+        }
+        @keyframes colorChange {
+            0%{
+                border-color: green;
+                color: green;
+            }
+            10%{
+                border-color: yellow;
+                color: yellow;
+            }
+            20%{
+                border-color: red;
+                color: red;
+
+            }
+            30%{
+                border-color: blue;
+                color: blue;
+            }
+            40%{
+                border-color: white;
+                color: white;
+            }
+            50%{
+               border-color: orange;
+               color: orange;
+            }
+            60%{
+                border-color: pink;
+                color: pink;
+            }
+            70%{
+                border-color: aqua;
+                color: aqua;
+            }
+            80%{
+                border-color: brown;
+                color: brown;
+            }
+            90%{
+                border-color: darkslategray;
+                color:darkslategray ;
+            }
+            100%{
+                border-color: red;
+                color: red;
+            }
+            
+        }
+    </style>
+</head>
+<!-- HTMl Part -->
+<body class="main">
+    <main class="main data">
+        <!-- Login heading -->
+        <h1>Login</h1>
+        <!-- Form's part -->
+        <form action="#" class="main">
+            <input type="text" name="name" id="username" placeholder="UserName"> <br> <br>
+            <input type="password" name="password" id="password" placeholder="Password"> <br> <br>
+            <input type="submit" value="Login" id="login">
+        </form>
+    </main>
+</body>
+</html>

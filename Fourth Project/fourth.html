@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down menu nav bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: solid 3px black;
+            height: 10vh;
+            padding: 14px;
+            color: white;
+            background-color: black;
+        }
+        h1{
+            font-size: 28px;
+        }
+        .right-data{
+            gap: 30px;
+            list-style: none;
+           
+            font-size: 19px;
+        }
+        .right-data a{
+            text-decoration: none;
+            color: white;
+        }
+        .toggles{
+            display: none;
+            list-style: none;
+        }
+        .active{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            background-color: black;
+            padding: 16px;
+            margin-top: 1rem;
+            position: absolute;
+            border-radius: 10px;
+        }
+        .right-data a:hover{
+            color: black;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <h1>Rachit</h1>
+        <div>
+            <ul class="main right-data">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a  id="dropdown" href="#">Services  <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="toggles">
+                        <li><a href="#">Concept Writing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Youtube Management</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+<script src="fourth.js"></script>
+</html>

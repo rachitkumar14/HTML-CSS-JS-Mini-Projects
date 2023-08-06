@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: antiquewhite;
+        height: 100vh;
+        width: 100vw;
+    }
+    .main.navbar{
+        height: 10vh;
+        width: 100vw; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid 2px black;
+        color: white;
+        padding: 20px;
+
+        background-color: black;
+    }
+    .left{
+       font-size: 3.3rem;
+    } 
+    .right ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 55px;
+      list-style: none;
+    }
+    .right ul li a{
+        color: white;
+        font-size: 1.5rem;
+         text-decoration: none;
+    }
+    .right ul li a:hover{
+        border: white;
+        background-color: white;
+        color: black;
+        padding: 6px 8px 6px 8px;
+        border-radius: 12px;
+        font-size:1.3rem;
+    }
+    #checkbox{
+        display: none;
+         cursor: pointer;
+         position: absolute; 
+        margin-top: 10px; 
+        margin-left: 10px;
+    }
+    #hamburger{
+        display: none;
+        font-size: 2rem;
+        margin-right: 20px;
+            
+    }
+
+    @media screen and (max-width:805px){
+        #hamburger{
+            display: block;
+        }
+        #checkbox{
+            display: none;
+        }
+    
+         .left{
+            font-size: 3rem;
+        } 
+        .right ul li  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         .lists{
+            display: flex;
+            flex-direction: column;
+                height: 100vh;
+                width: 100vw;
+            background-color:black;
+            position: fixed;
+            left: 100%;
+            text-align: center;
+            top: 4rem;
+
+            transition: 1s all;
+        }
+
+        #checkbox:checked~.lists{
+            left:0%;
+            
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main navbar">
+        <!-- Navbar bar left portion -->
+        <div class="navbar left">Rachit</div>
+        <!-- Navbar Right portion -->
+        <div class="navbar right">
+           <input type="checkbox" name="check" id="checkbox"/>
+            <label for="checkbox" id="hamburger"> <i class="fa-solid fa-bars"></i></label>
+          
+            <!-- Navbar Lists -->
+            <ul class="lists">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

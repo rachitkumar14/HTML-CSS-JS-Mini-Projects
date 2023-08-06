@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Hero class is included display flex because it uses more in the program */
+        .hero{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+        }
+        /* body */
+        body{
+             height: 100vh;
+             width: 100vw;
+            
+        }
+        /* Container data */
+        .container{
+            width:450px;
+            height: 100vh;
+            border: solid 3px black;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 14px;
+            gap: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+        /* Nav-bar info.. */
+        .nav-bar{
+           width: 400px;
+           justify-content: space-between;
+           font-size: 23px;
+        }
+        /* Right Nav-bar data */
+        .right-nav{
+            gap: 18px;
+        }
+        /* nav bar font data */
+        .heart,.bar,.fa-arrow-left{
+            cursor: pointer;
+        }
+        /* Main part data is here */
+        main{
+           flex-direction: column;
+           gap: 25px;
+        }
+        main img{
+           height: 180px;
+           width: 180px;
+           border-radius: 50%;
+        }
+        main h1{
+            font-size: 35px;
+        }
+        main p{
+            font-size: 23px;
+        }
+        /* Section part data is here */
+        section{
+            text-align: center;
+            gap: 78px;
+        }
+        section img{
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button{
+            width: 130px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 32px;
+            cursor: pointer;
+        }
+        /* Footer part data is here */
+        footer{
+            gap: 50px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<!-- Hero class contain display flex data because it uses more in the program -->
+<!-- Body -->
+<body class="hero">
+    <!-- Container -->
+    <div class="container hero">
+        <!-- Nav Bar -->
+        <nav class="hero nav-bar">
+            <!-- Left Nav-bar -->
+            <div><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></div>
+            <!-- Right Nav-bar -->
+            <div class="hero right-nav">
+                <div class="heart"><i id="heart" class="fa-regular fa-heart"></i></div>
+                <div class="bar"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+        <!-- Main part of the webpage in which developer image and heading with para is included -->
+        <main class="hero">
+            <img src="./Assests/Snapchat-625366551.jpg" alt="developer pic" height="100px" width="100px">
+            <h1>Rachit Kumar</h1>
+            <p>My name is Rachit Kumar and <br> I am a frontend Web Developer</p>
+            <button>Hire Me</button>
+        </main>
+        <!-- Logo section -->
+        <section class="hero">
+           <div> <img src="Assests/Instagram logo.jpg" alt="Instagram logo" height="50px" width="50px"> <br><p>100K</p></div>
+           <div>
+            <img src="Assests/Youtube logo.png" alt="Youtube logo" height="50px" width="50px"> <br><p>100K</p>
+           </div>
+            <div>
+                <img src="Assests/Twitter logo.png" alt="Twitter logo" height="50px" width="50px"> <br><p>100K</p>
+            </div>
+        </section>
+        <!-- Footer Part -->
+        <footer class="hero">
+            <p>Followers</p>
+            <p>Subcribers</p>
+            <p>Followers</p>
+        </footer>
+    </div>
+</body>
+<!-- Script -->
+<script>
+    let like_button=document.querySelector('#heart');
+like_button.addEventListener('click',function(){
+    like_button.classList.toggle('fa-solid');
+    if(like_button.classList=="fa-regular fa-heart fa-solid")
+    {
+        like_button.style.color="red";
+    }
+    else{
+        like_button.style.color="white";
+    }
+    console.log("clicked");
+})
+</script>
+</html>

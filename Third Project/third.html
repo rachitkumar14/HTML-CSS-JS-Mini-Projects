@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page With UserName and Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:wght@600&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(204, 231, 240);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        border: solid 2px black;
+        padding: 10px;
+        padding-top: 40px;
+        background-color: white;
+        width: 24vw;
+        border-radius: 10px;
+        height: 90vh;
+        border: none;
+    }
+    .input-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+    }
+    label{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    input{
+        margin-bottom: 17px;
+        margin-top: 6px;
+        width: 18vw;
+        border: none;
+        font-size: 18px;
+    }
+    input:focus{
+        outline: none;
+    }
+    hr{
+        margin-bottom: 10px;
+    }
+    .forgot-password{
+        width: 19vw;
+        text-align: end;
+        font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+color: rgb(6, 6, 75);
+    }
+    #submit-button{
+        width: 19vw;
+        cursor: pointer;
+        padding: 10px 0px 10px 0px;
+        font-size: 17px;
+        font-weight: 550;
+        background: linear-gradient(to right, #8d68c5, #e34494);
+        border: none;
+        color: white;
+        border-radius: 32px;
+    }
+    .below-login{
+        font-weight: 700;
+        font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-size: 17px;
+    }
+    .icons{
+        display: flex;
+        gap: 20px;
+        font-size:30px;
+        cursor: pointer;
+    }
+    .fa-facebook{
+        background-color: white;
+        color: darkblue;
+        border-radius: 50%;
+        border: none;
+    }
+    .fa-twitter{
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+        padding-top: 7px;
+        text-align: center;
+        font-size: 18px;
+        width: 2vw;
+        border: none;
+    }
+    .fa-google{
+        background-color: orangered;
+        color: white;
+        padding: 4px;
+        border-radius: 50%;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 7px;
+        width: 2vw;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+    }
+    .sign-up-using-last{
+        font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-weight: 550;
+    }
+    .sign-up{
+        font-weight: 800;
+    }
+</style>
+</head>
+<body>
+    <main>
+       <div class="heading"> <h1>Login</h1></div>
+       <div class="input-data heading">
+         <div>
+        <label for="name">Username</label> <br>
+        <i class="fa-solid fa-user"></i> <input type="text" name="username" id="name" placeholder="Type Your UserName"><hr>
+        <label for="password">Password</label> <br> 
+        <i class="fa-solid fa-key"></i> <input type="password" name="password" id="password" placeholder="Type Your Password"><hr>
+    </div>
+    <div class="forgot-password">
+        Forgot Password?
+    </div>
+    <div>
+        <input type="submit" value="Login" id="submit-button">
+    </div>
+    </div>
+    <div class="below-login button">
+        <p>Or SignUp Using</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+    </div>
+    <div class="below-icons button">
+        <div class="sign-up-using-last">Or SignUp Using</div>
+        <div class="sign-up">SIGN UP</div>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact form using html and CSS</title>
+    <style>
+        /* Css starting from here */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(247, 197, 205);
+        }
+        /* Main div query here */
+        .main{
+           background-color: white;
+           padding: 20px 30px 20px 30px;
+           border-radius: 32px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            text-align: center;
+            
+        }
+        /* heading of the webpage */
+        .heading{
+            color: rgb(252, 104, 50);
+            font-weight: lighter;
+        }
+        /* Form query here */
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 13px;
+            padding: 15px;
+        }
+        /* inputs like email , name , password same class here */
+        .id{
+            width: 40vw;
+            height: 7vh;
+            border-radius: 8px;
+            border: none;
+            padding-left: 7px;
+            font-size:17px;
+            background-color: rgb(245, 241, 241);
+            font-weight: lighter;
+
+        }
+        /* Text area query here */
+        #address{
+            width: 40vw;
+            height: 20vh;
+            border-radius: 8px;
+            background-color: rgb(240, 236, 236);
+            resize: none;
+            padding: 8px;
+            font-size: 17px;
+            font-weight: 300;
+            border: none;
+        }
+        /* Submit button */
+        #submit-button{
+            width: 40vw;
+            height: 6vh;
+            border-radius: 20px;
+            border: orangered 2px solid;
+            color: orangered;
+            background-color: white;
+            font-weight: 500;
+            font-size: 17px;
+            margin-top: 10px;
+        }
+        /* Submit button hover query */
+        #submit-button:hover{
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<!-- HTML starting from here -->
+<body>
+  <!-- Main div which holds two child div -->
+   <div class="main container">  
+    <!-- first child div -->
+    <div class="heading"><h1>Get In Touch</h1></div>
+    <!-- Second child div -->
+   <div class="form container">
+    <!-- Form -->
+    <form action="#">
+        <input type="text" name="name" id="name" class="id" placeholder=" Enter Your Name">
+        <input type="email" name="email" id="email" class="id" placeholder=" Enter Your Email">
+        <input type="password" name="password" id="password" class="id" placeholder=" Enter Your Password">
+        <input type="text" name="coupon" id="coupon" class="id" placeholder=" Enter Coupon Code">
+        <textarea name="textarea" id="address" cols="30" rows="10" placeholder=" Write Something"></textarea>
+        <input type="submit" value="Send" id="submit-button">
+    </form>
+   </div>
+   </div>
+</body>
+</html>
