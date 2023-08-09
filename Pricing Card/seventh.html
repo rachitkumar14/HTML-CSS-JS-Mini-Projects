@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            background-color: rgb(1, 102, 109);
+        }
+        header{
+            margin-top: 2rem;
+            color: white;
+            font-size: 1.6rem;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            width: 95vw;
+        }
+        .card{
+            width: 20vw;
+            border: solid 2px black;
+            text-align: center;
+            gap: 25px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+        }
+        .card:hover{
+            background-color: rgb(95, 198, 238);
+            margin-top: -2px;
+            
+        }
+        .card:hover .item-price{
+            color: black;
+        }
+        .card:hover .order-button{
+            border: solid 3px white;
+            background-color: rgb(95, 198, 238);
+            color: white;
+        }
+        .items-list{
+            list-style: none;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+        }
+        .order-button{
+        margin: 20px 3rem 3rem 3rem;
+        padding: 1rem;
+        border-radius: 32px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border: solid 3px  rgb(95, 198, 238);
+        background-color: white;
+        }
+        .order-button:hover{
+            cursor: pointer;
+            
+
+        }
+        .item-price{
+            font-size: 1.8rem;
+            color:  rgb(75, 191, 236);
+        }
+        .card-heading{
+            border: solid 2px rgb(95, 198, 238);
+           margin: 0 3.1rem 0 3.1rem;
+           border-radius: 12px;
+           padding-top: .4rem ;
+           padding-bottom: .5rem;
+           background-color:  rgb(95, 198, 238);
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Pricing</h1>
+     </header>
+      <main>
+        <div class="card">
+              <h2 class="card-heading">Personal</h2>
+              <h3 class="item-price"><sup>$</sup><sub>15 </sub><sub><sub>/Mon</sub></sub></h3>
+              <ul class="items-list">
+                <li>2 Websites</li>
+                <li>30GB SSD </li>
+                <li>1 Domain</li>
+                <li>1 Email</li>
+                <li>1x CPU & RAM</li>
+              </ul>
+              <button class="order-button">Order Now</button>
+        </div>
+        <div class="card">
+            <h2 class="card-heading">Premium</h2>
+            <h3 class="item-price"> <sup>$</sup><sub>30 </sub><sub><sub>/Mon</sub></sub></h3>
+            <ul  class="items-list">
+              <li>50 Websites</li>
+              <li>60GB SSD </li>
+              <li>5 Domain</li>
+              <li>20 Email</li>
+              <li>2x CPU & RAM</li>
+            </ul>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="card">
+            <h2 class="card-heading">Ultimate</h2>
+            <h3 class="item-price"><sup>$</sup><sub>100 </sub><sub><sub>/Mon</sub></sub></h3>
+            <ul  class="items-list">
+              <li>100 Websites</li>
+              <li>200GB SSD </li>
+              <li>10 Domain</li>
+              <li>10 Email</li>
+              <li>2x CPU & RAM</li>
+            </ul>
+            <button class="order-button">Order Now</button>
+        </div>
+      </main>
+</body>
+</html>
