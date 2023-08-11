@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(213, 82, 240);
+    height: 100vh;
+    justify-content: space-evenly;
+}
+header{
+    font-size: 1.6rem;
+    color: white;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 22rem;
+    border: black 2px solid;
+    background-color: whitesmoke;
+    height: 85vh;
+    position: relative;
+    justify-content: space-evenly;
+
+    gap: 1.1rem;
+    border-radius: 12px;
+    border: none;
+}
+.card-nav-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    width: 90%;
+}
+.shoe-pic img{
+    width: 18rem;
+    height: 12rem;
+}
+.shoe-pic img,.puma-logo,.shopping-cart{
+    cursor: pointer;
+}
+.item-data{
+    width: 90%;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.rating{
+    color: rgb(213, 82, 240);
+}
+.item-price{
+    font-size: 2.5rem;
+}
+.addcart-button{
+  width:20rem;
+  height: 2.6rem;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  background-color: rgb(213, 82, 240);
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+.addcart-button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 1s all;
+}
