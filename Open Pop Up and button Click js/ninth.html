@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Popup and click button</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+      
+       .box{
+            visibility:hidden;
+        background-color: white;
+        display: flex;
+        height: 14rem;
+        width: 18rem;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 49px;
+        position: absolute;
+        border-radius: 32px;
+        padding: 10px;
+        top: -10%;
+        transform: scale(0.1);
+        transition: all .4s linear;
+        flex-direction: column;
+        font-size: 18px;
+       }
+       .inside-box{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+       }
+       .thankyou{
+         font-size: 24px;
+         font-weight: bold;
+       }
+       .box img{
+        border-radius: 50px;
+        margin-top: -15px;
+        padding: 8px;
+       }
+       .submit-button {
+        width: 8rem;
+        height:3rem;
+        font-size: 1.2rem;
+        border: green;
+        position: absolute;
+        border-radius: 32px;
+        background-color: lightgreen;
+       }
+       .pop-up-box{
+         visibility: visible;
+         transform: scale(1.1);
+         top: 30%;
+         
+       }
+       .submit-button,.okay-button{
+        cursor: pointer;
+       }
+       .okay-button{
+        width: 16rem;
+        height: 2.2rem;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 22px;
+       }
+       .remove-submit-button{
+        display: none;
+       }
+       .hero{
+         align-items: center;
+       }
+      
+    </style>
+   
+</head>
+<body>
+      <button class="submit-button">Submit</button>
+      <div class="box">
+         <img src="./Images/Snapchat-625366551.jpg" alt="developer-pic" height="70px" width="70px">
+        <div class="inside-box">
+         <p class="thankyou">ThankYou!</p>
+         <p>ThankYou sir! Your form has been <br> successfully submitted</p>
+         <button class="okay-button">Okay</button>
+        </div>
+     </div>
+</body>
+<script src="ninth.js"></script>
+</html>
