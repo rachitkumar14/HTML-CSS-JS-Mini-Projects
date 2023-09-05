@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(4, 4, 75);
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: space-around;
+}
+nav , .nav-lists a , .main-left-data h1 , article{
+    color: white;
+}
+.nav-heading{
+    font-size: 2rem;
+}
+.nav-lists{
+    gap: 60px;
+    list-style: none;
+}
+.nav-lists a{
+font-size: 1.3rem;
+text-decoration: none;
+}
+main{
+    justify-content: space-between;
+    padding: 50px;
+}
+.main-left-data{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main-buttons{
+    display: flex;
+    gap: 2px;
+}
+.button{
+    padding: 10px 20px 10px 20px;
+    background-color:rgb(6, 6, 77);
+    color:  rgb(0, 162, 255);
+    border: rgb(0, 162, 255) solid 2px;
+    font-size: 17px; 
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    border: black 2px solid;
+    transition: all .3s linear;
+}
+.project-card:hover{
+    transform: scale(1.1);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.service-card:hover{
+    transform: scale(1.1);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.lets-talk , .hire-me{
+    color: black;
+    background-color: rgb(0, 162, 255);
+    font-size: 19px;
+}
+.main-left-data h2{
+    color: rgb(145, 141, 141);
+}
+.developer-pic-main{
+    padding-right: 270px;
+}
+.developer-pic-main img{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+#about-me , .services{
+    flex-direction: column;
+    gap: 55px;
+}
+article h1 , .skills h1 , .services h1 , .projects h1 , .contact-form h1{
+    font-size: 3rem;
+    color: white;
+}
+.article-data{
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+.article-data h2{
+    font-size: 2rem;
+}
+.article-data-right{
+    gap: 17px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.article-data-right p{
+    font-size: 18px;
+}
+.article-data img{
+    width: 260px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+.hire-me{
+    width: 120px;
+}
+.fa-arrow-up{
+    color: white;
+    text-align: right;
+    border-radius: 10px;
+    position: fixed;
+    padding: 15px;
+    left: 96%;
+    background-color: rgb(126, 208, 219);
+    border: none;
+    cursor: pointer;
+    color: black;
+    bottom: 6%;
+}
+/* skills */
+.skills{
+    flex-direction: column;
+    gap: 38px;
+}
+.skills-data{
+    justify-content: space-around;
+width: 100%;
+}
+.skills-data img{
+    width: 400px;
+    height: 300px;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+.html{
+    gap: 555px;
+    border-bottom: 5px red solid;
+}
+.css{
+    gap: 480px;
+    border-bottom: 5px skyblue solid;
+    width: 85%;
+}
+.js{
+    gap: 364px;
+    border-bottom: yellow 5px solid;
+    width: 75%;
+}
+.Bootstrap{
+    gap: 280px;
+    border-bottom: solid purple 5px;
+    width: 60%;
+}
+.react{
+    gap: 220px;
+    border-bottom: solid skyblue 5px;
+    width: 50%;
+}
+/* Services */
+.cards {
+    justify-content: space-evenly;
+    width: 97vw;
+}
+.service-card h2 , .project-card h2{
+    color: white;
+    font-size: 1.7rem;
+}
+.service-card span , .project-card span{
+    font-size: 17px;
+    text-align: center;
+}
+.service-card , .project-card{
+    flex-direction: column;
+    gap: 12px;
+    color: rgb(218, 206, 206);
+    padding: 30px;
+    border-radius: 22px;
+    background-color: rgb(2, 2, 58);
+}
+.projects-buttons{
+    gap: 14px;
+}
+.projects , .contact-form{
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+.project-card img , .contact-button , input{
+    width: 100%;
+}
+.project-lower-cards{
+    gap: 30px;
+}
+/* Contact form */
+.media-list{
+    margin-top: 80px;
+    display: none;
+}
+.flex-lists li a:hover{
+    color: black;
+    padding: 5px; 
+    background-color: white;
+    border-radius: 50%;
+}
+.form{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+input , #address{
+    padding: 8px 0px 8px 6px;
+    border-radius: 7px;
+    background-color: rgb(6, 6, 77);
+    border: rgb(0, 162, 255) solid 2px;
+    color: rgb(196, 196, 196); ;
+    resize: none;
+}
+input::placeholder{
+    padding-left: 7px;
+    color: rgb(196, 196, 196);
+}
+#address::placeholder{
+    font-size: 17px;
+    color:rgb(196, 196, 196);
+}
+/* Footer */
+.footer{
+    border: solid 2px  rgb(0, 162, 255) ;
+    margin-top: 20px;
+    background-color:rgb(0, 162, 255) ;
+    flex-direction: column;
+    gap: 30px;
+    height: 50vh;
+}
+.footer-list{
+    /* justify-content: center; */
+    margin-top: 40px;
+    font-weight: bolder;
+}
+.footer-list a{
+    color: rgb(4, 4, 78);
+    font-size: 21px;
+}
+.footer-social-medias{
+    justify-content: center;
+    gap: 50px;
+}
+.footer-social-medias img{
+    border-radius: 15px;
+}
+#linkedln{
+    border-radius: 18px;
+}
+.left-side-line-footer , .dev-name{
+    color: rgb(5, 2, 32);
+    font-size: 1.2rem;
+}
+.flex-lists{
+    padding: 23px ; 
+   bottom: 3%;
+   position: fixed;
+   background-color: rgb(6, 5, 63);
+   border-radius: 28px;
+   left: 15%;   
+}
+.media-lists ul li a:hover{
+    background-color:white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+}
+@media screen and (max-width:550px) {
+    body{
+        gap: 15px;
+    }
+    .fa-arrow-up{
+        left: 85%;
+        bottom: 4%;
+    }
+    .nav{
+        display: none;
+    }
+    .html{
+        gap: 325px;
+        border-bottom: 5px red solid;
+    }
+    .css{
+        gap: 300px;
+        border-bottom: 5px skyblue solid;
+        width: 87%;
+    }
+    .js{
+        gap: 190px;
+        border-bottom: yellow 5px solid;
+        width: 75%;
+    }
+    .Bootstrap{
+        gap: 120px;
+        border-bottom: solid purple 5px;
+        width: 55%;
+    }
+    .react{
+        gap: 60px;
+        border-bottom: solid skyblue 5px;
+        width: 37%;
+    }
+    .media-flex{
+        flex-direction: column;
+    }
+    main{
+        gap: 30px;
+        padding: 10px;
+        align-items: center;
+    }
+    .media-list{
+        display: flex;
+    }
+    .developer-pic-main{
+        padding-right: 0;
+    }
+    .article-data{
+         align-items: center;
+         gap: 10px;
+         text-align: center;
+    }
+    button{
+        border: solid 3px black;
+    }
+    .cards{
+        gap: 20px;
+    }
+    .footer{
+        display: none;
+    }
+}
