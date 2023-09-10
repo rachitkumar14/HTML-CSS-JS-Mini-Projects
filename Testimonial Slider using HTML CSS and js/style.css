@@ -42,3 +42,6 @@ i,#job{
 i,.random-button{
     cursor: pointer;
 }
+i:hover{
+    color: black;
+}

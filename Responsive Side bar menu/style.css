@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: purple;
+}
+main{
+    padding-left: 10px;
+    width: 67px;
+    overflow: hidden;
+    height: 100vh;
+    color: rgb(20, 172, 121);
+    background-color: white;
+}
+.list a{
+    color: rgb(20, 172, 121);
+}
+.heading {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    gap: 30px;
+}
+.heading img{
+  margin-left: 10px;
+  border-radius: 12%;
+}
+.heading a  , .list a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    gap: 30px;
+    font-size: 21px;
+    list-style: none;
+    margin-top: 20px;
+}
+.lists{
+   display: flex;
+   margin-top: 10px;
+   margin-left: 20px;
+   flex-direction: column;
+   gap: 110px;
+}
+main:hover{
+    width: 180px;
+    transition: all .4s linear;
+}
+.list:hover{
+    color:rgb(82, 3, 82) ;
+}
+.list a:hover{
+    color:rgb(82, 3, 82);
+}
