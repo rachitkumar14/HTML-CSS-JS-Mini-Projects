@@ -6,13 +6,16 @@
 body{
     background-color: purple;
 }
-main{
+.headings{
     padding-left: 10px;
-    width: 67px;
     overflow: hidden;
+    width: 180px;
     height: 100vh;
     color: rgb(20, 172, 121);
     background-color: white;
+}
+.active{
+    transform: rotate(90deg);
 }
 .list a{
     color: rgb(20, 172, 121);
@@ -32,7 +35,6 @@ main{
     list-style: none;
 }
 
-
 .list{
     display: flex;
     gap: 30px;
@@ -47,13 +49,21 @@ main{
    flex-direction: column;
    gap: 110px;
 }
-main:hover{
-    width: 180px;
-    transition: all .4s linear;
-}
 .list:hover{
     color:rgb(82, 3, 82) ;
 }
 .list a:hover{
     color:rgb(82, 3, 82);
+}
+#menu{
+    position:absolute;
+    margin-left: 160px;
+    
+  text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 4px;
+    /* transform: rotate(-90deg); */
+   background-color: rgb(0, 128, 85);
+   color: white;
 }
