@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    
+}
+.hero{
+    display: flex;
+}
+.direction{
+    flex-direction: column;
+}
+.left-menu-bar{
+    gap: 200px;
+    align-items: center;
+    height: 100vh;
+    border: solid 2px black;
+position: absolute;
+box-shadow: 5px 5px  5px black;
+    overflow: hidden;
+    width: 0px;
+    /* transform: translateX(-240px); */
+    transition: all .5s linear;
+
+}
+.active{
+    transition: all .5s linear;
+}
+
+.lists{
+    list-style: none;
+    gap: 15px;    
+}
+.list a{
+   text-decoration: none;
+   color: black;
+   font-size: 19px;
+}
+a:hover{
+  color: rgb(187, 24, 187);
+  font-size: 20px;
+}
+.left-upper-part{
+    gap: 26px;
+}
+/* Hamburger styling */
+#hamburger{
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Right side */
+.right-side
+{
+    margin-left: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+    transition: all linear .5s;
+
+}
+.right-side h2{
+    font-size: 30px;
+}
+#search_bar{
+     width: 89vw; 
+    height:30px;
+    border-radius: 6px;
+    
+    border: 1px solid black;
+    padding-left: 5px;
+    left: 70px;
+    top: 3%;
+    position: fixed;
+    font-size: 17px;
+
+
+}
+
+.right-nav{
+    width: 100vw;
+height: 70px;
+    align-items: center;
+}
+.nav-image img{
+    height: 47px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+/* Cards */
+.cards{
+    justify-content: space-between;
+margin: 10px;
+}
+.card{
+    text-align: center;
+    border-radius: 12px;
+    gap: 10px;
+ 
+    font-size: 18px;
+    padding: 20px 25px ;
+}
+.likes{
+    background-color: skyblue;
+    padding: 20px 30px;
+}
+.comments{
+    background-color: rgb(230, 230, 62);
+}
+.shares{
+    background-color: rgb(233, 78, 143);
+}
+.memory{
+    background-color:rgb(224, 185, 135);
+    margin-right: 20px;
+}
+.footer{
+    /* gap: 680px; */
+    justify-content: space-between;
+    margin: 20px;
+}
+.footer-right{
+    margin-right: 40px;
+}
+.section{
+    gap: 60px;
+
+}
+.footer-data{
+    gap: 5px;
+    font-size: 17px;
+}
+.footer h2{
+    font-size: 24px;
+}
+.media-line{
+   
+    display: none;
+}
+@media  screen and (max-width:720px) {
+    .left-menu-bar{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    .media-line{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(240, 50, 129);
+    }
+
+}
